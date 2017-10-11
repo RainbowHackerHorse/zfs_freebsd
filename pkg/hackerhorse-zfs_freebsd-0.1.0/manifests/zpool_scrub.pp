@@ -1,3 +1,7 @@
+# Class: zfs_freebsd::zpool_scrub
+# A class to run ZFS scrubbing
+#
+#
 class zfs::zpool_scrub (
   $ensure = present,
   $threshold = 30

@@ -1,4 +1,5 @@
-define zfs::create (
+# define type for FreeBSD ZFS Dataset Management
+define zfs_freebsd::create (
   $ensure = present,
   $filesystem = '',
   $nooper = false,

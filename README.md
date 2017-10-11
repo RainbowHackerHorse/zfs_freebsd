@@ -13,8 +13,7 @@
 
 ## Description
 
-zfs_freebsd is a basic module to allow for the creation/destruction of ZFS datasets,
-as well as running scrub regularly.
+zfs_freebsd is a basic module to allow for the creation/destruction of ZFS datasets.
 In the future, this module will support more functions, such as the creation of ZFS Volumes.
 
 The original work on this module was done by @snonux on github.
@@ -54,4 +53,5 @@ and opening a PR.
 
 ## Changelog
 * 0.1.0 - Initial release 
+* 0.1.1 - Remove Scrub
 

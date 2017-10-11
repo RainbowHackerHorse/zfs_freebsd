@@ -16,8 +16,7 @@ define zfs_freebsd::create (
           unless  => "zfs list ${name}"
         }
         exec { "zfs set mountpoint=${filesystem} ${name}":
-          unless => "zfs get mountpoint ${name} | grep -q ' ${filesystem} '",
-
+          unless  => "zfs get mountpoint ${name} | grep -q ' ${filesystem} '",
           require => Exec["${name}_create"],
         }
       }

@@ -3,81 +3,55 @@
 #### Table of Contents
 
 1. [Description](#description)
-1. [Setup - The basics of getting started with zfs_freebsd](#setup)
-    * [What zfs_freebsd affects](#what-zfs_freebsd-affects)
+1. [Setup - The basics](#setup)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with zfs_freebsd](#beginning-with-zfs_freebsd)
-1. [Usage - Configuration options and additional functionality](#usage)
-1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+1. [Usage](#usage)
 1. [Limitations - OS compatibility, etc.](#limitations)
 1. [Development - Guide for contributing to the module](#development)
+1. [Contributors - whodunnit?](#contributors)
+1. [Changelog](#changelog)
 
 ## Description
 
-Start with a one- or two-sentence summary of what the module does and/or what
-problem it solves. This is your 30-second elevator pitch for your module.
-Consider including OS/Puppet version it works with.
+zfs_freebsd is a basic module to allow for the creation/destruction of ZFS datasets,
+as well as running scrub regularly.
+In the future, this module will support more functions, such as the creation of ZFS Volumes.
 
-You can give more descriptive information in a second paragraph. This paragraph
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?" If your module has a range of functionality (installation, configuration,
-management, etc.), this is the time to mention it.
+The original work on this module was done by @snonux on github.
+Further work is continued on a fork by @RainbowHackerHorse (That's me!)
 
 ## Setup
 
-### What zfs_freebsd affects **OPTIONAL**
+### Setup Requirements
 
-If it's obvious what your module touches, you can skip this section. For
-example, folks can probably figure out that your mysql_instance module affects
-their MySQL instances.
-
-If there's more that they should know about, though, this is the place to mention:
-
-* A list of files, packages, services, or operations that the module will alter,
-  impact, or execute.
-* Dependencies that your module automatically installs.
-* Warnings or other important notices.
-
-### Setup Requirements **OPTIONAL**
-
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
-
-If your most recent release breaks compatibility or requires particular steps
-for upgrading, you might want to include an additional "Upgrading" section
-here.
-
-### Beginning with zfs_freebsd
-
-The very basic steps needed for a user to get the module up and running. This
-can include setup steps, if necessary, or it can be an example of the most
-basic use of the module.
+You need to be running ZFS on a FreeBSD system. No other requirements are in place.
 
 ## Usage
 
-This section is where you describe how to customize, configure, and do the
-fancy stuff with your module here. It's especially helpful if you include usage
-examples and code samples for doing things with your module.
+To start, simply download the module, and add something like:
 
-## Reference
+`zfs_freebsd::create { 'zroot/foobar':
+  ensure     => present,
+  filesystem => '/foobar',
+ }`
 
-Here, include a complete list of your module's classes, types, providers,
-facts, along with the parameters for each. Users refer to this section (thus
-the name "Reference") to find specific details; most users don't read it per
-se.
+Use `ensure => absent` to destroy the dataset.
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc. If there
-are Known Issues, you might want to include them under their own heading here.
+This module is currently only available for use on FreeBSD, and only manages datasets currently.
+Future development will be implementing other ZFS features.
 
 ## Development
 
-Since your module is awesome, other users will want to play with it. Let them
-know what the ground rules for contributing are.
+You can contribute by forking https://github.com/RainbowHackerHorse/zfs_freebsd
+and opening a PR.
 
-## Release Notes/Contributors/Etc. **Optional**
+## Contributors
 
-If you aren't using changelog, put your release notes here (though you should
-consider using changelog). You can also add any additional sections you feel
-are necessary or important to include here. Please use the `## ` header.
+* Snonux - Original author prior to fork
+* Rainbow (RainbowHackerHorse)
+
+## Changelog
+* 0.1.0 - Initial release 
+

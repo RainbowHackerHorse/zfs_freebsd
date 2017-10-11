@@ -1,0 +1,11 @@
+{
+  "Gemfile": "36c376f27539ded2a321b2bd432e843b",
+  "LICENSE": "fa5714031402bb439aa292ea39c18fb5",
+  "README.md": "252c2f9714433a160b8b94f7eeed6f03",
+  "Rakefile": "f4692851f7e9afcdb02721319e3f18b9",
+  "manifests/create.pp": "8cf0da9eb9a2ba16b53a22e2c1587490",
+  "manifests/zpool_scrub.pp": "00572919e5a0658e81a49a3b372d5413",
+  "metadata.json": "7605422428fc910ed9ca52d7b95209e8",
+  "spec/classes/init_spec.rb": "b5b3b470cfa8e6881d2f61642646d2e6",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc"
+}

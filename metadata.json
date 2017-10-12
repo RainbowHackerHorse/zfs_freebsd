@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "author": "hackerhorse",
   "summary": "zfs tools for FreeBSD",
-  "license": "bsd-2-clause",
+  "license": "BSD-2-Clause",
   "source": "https://github.com/RainbowHackerHorse/zfs_freebsd",
   "project_page": "https://github.com/RainbowHackerHorse/zfs_freebsd",
   "issues_url": "https://github.com/RainbowHackerHorse/zfs_freebsd/issues",

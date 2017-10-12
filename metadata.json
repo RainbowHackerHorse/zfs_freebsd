@@ -1,6 +1,6 @@
 {
   "name": "hackerhorse-zfs_freebsd",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "hackerhorse",
   "summary": "zfs tools for FreeBSD",
   "license": "bsd-2-clause",
@@ -8,7 +8,7 @@
   "project_page": "https://github.com/RainbowHackerHorse/zfs_freebsd",
   "issues_url": "https://github.com/RainbowHackerHorse/zfs_freebsd/issues",
   "dependencies": [
-    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+    {"name":"puppetlabs-stdlib","version_requirement":">= 4.20.0"}
   ],
   "operatingsystem_support": [
     {
